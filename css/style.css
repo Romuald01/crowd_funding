@@ -1,0 +1,841 @@
+
+/* - Moderate cyan: hsl(176, 50%, 47%)
+- Dark cyan: hsl(176, 72%, 28%)
+- Black: hsl(0, 0%, 0%)
+- Dark gray: hsl(0, 0%, 48%) */
+
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box; 
+}
+
+body{
+    background-color: rgb(235, 235, 235);
+}
+
+html{
+    font-family:"Commissioner",sans-serif;
+    font-size: 62.5%;
+}
+
+/* header styling start */
+.header-box{
+    background-image: url(../images/image-hero-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    height:400px;
+
+}
+
+.header-contents,.selected-modal{
+    display: flex;
+    justify-content: space-between;
+   }
+
+.lists .list-item{
+    display: inline-block;
+    list-style: none;
+    font-size: 1.8rem;
+    padding: 10px;
+    color: hsl(0,0%,100%)
+}
+
+.lists-box{
+    margin-top:-1%;
+}
+
+.hamburger-icon,.close-icon,.overlay,.phone-bookmark{
+    display: none;
+}
+
+.list-link:link,
+.list-link:visited{
+    text-decoration: none;
+    color: hsl(0,0%,100%);
+}
+/* header styling start */
+
+/* mastercraft container div styling */
+.mastercraft-container{
+    position: absolute;
+    border-radius: 5px;
+    width: 50%;   
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%,7%);
+    padding-bottom: 10%;
+    box-sizing: border-box;
+    }
+
+    .container-fluid .about-this-project-box{
+     background-color: hsl(0,0%,100%);   
+     /* padding-right: 0 !important;
+     padding-left: 0 !important; */
+    }
+
+
+.mastercraft-box,.tracker-box{
+    position: relative;
+    border-radius: 10px;
+    background-color: hsl(0,0%,100%); 
+   }
+
+.logo-mastercraft{
+    margin-top: -5%;
+}
+
+.mastercraft-bamboo{
+    text-align: center;
+    /* border-radius: 20px; */
+}
+
+.master-heading{
+    font-size:2.4rem;
+    font-weight: 700;
+}
+
+.master-text{
+    color: hsl(0,0%,48%);
+    font-size: 1.4rem;
+    padding-top: 15px;
+}
+
+.mastercraft-button,.bamboo-stand-headings{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.button{
+    border-radius:60px;
+    border:none;
+    width: 155px; 
+    font-size: 1.5rem;
+    background-color:hsl(176, 72%, 28%);
+    color:hsl(0,0%,100%);
+    text-align: center;
+    padding: 8px 0px 10px;
+}
+
+.bookmark-link{
+    color:hsl(0,0%,100%);
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+.icon-bookmarked-text{
+  padding-left:50px;
+}
+
+.bookmark-link:hover{
+    text-decoration: none;
+    color: hsl(0,0%,100%);
+}
+
+.change-link:hover{
+color: hsl(0,0%,48%);
+}
+
+.icon-bookmarked-box{
+    background-color:rgb(228, 225, 225);
+    
+}
+
+.icon-bookmarked{
+    right: 23%;
+    height: 40px;
+    position: absolute;
+    height: 40px;
+    top: 30%;
+} 
+
+.change-link{
+    color: hsl(0,0%,48%);  
+}
+/* styling of the second section start */
+
+.total-border{
+border: 1px solid hsl(0,0%,48%);
+border-top: none;
+border-bottom: none;
+}
+
+.tracker-datas{
+    color: hsl(0,0%,48%);
+
+}
+
+.progress-bar{
+    background-color: hsl(176, 72%, 28%);
+    border-radius: 10px;
+}
+/* styling of the second section start */
+
+
+
+/* styling of the third section  and fourth start*/
+.second-segment-content{
+    background-color: hsl(0,0%,100%);
+    padding: 8%;
+}
+.about-project,.bamboo-stand-contents{
+    padding: 40px;
+    padding-bottom: 30px;
+}
+
+.about-heading{
+    font-weight: 700;
+}
+.about-text,.bamboo-stand-paragraph{
+    color: hsl(0,0%,48%);
+    font-size: 1.4rem;
+    font-weight:600;
+    width: 95%;
+}
+
+/* styling of the third and fourth section end*/
+
+/*styling of fourth section start*/ 
+.pledges{
+    color: hsl(176, 72%, 28%);
+    
+}
+
+.bamboo-stand-contents{
+border: 1px solid rgba(160, 158, 158, 0.9) ;
+    border-radius: 10px;
+}
+
+.bamboo-stand-headings h4{
+   font-weight: 700;
+}
+.left{
+    color: hsl(0,0%,48%);
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    padding-left: 10px;
+    /* top: 15%; */
+}
+
+.black-left{
+    left: 7%;
+}
+.mahogany-left{
+    left: 4%;
+    color: rgb(226, 224, 224);
+}
+.mahogany-special-paragraph{
+    color: rgb(226, 224, 224);
+}
+.mahogany-special-heading{
+    color: hsl(0,0%,48%);
+}
+.mahogany-special-pledge{
+color: hsl(176, 45%, 67%);
+}
+
+
+.stands-number{
+    font-size: 3rem;
+}
+
+.left,.select-text,.stands-number{
+    font-weight: 700;
+}
+
+.left,.select-text{
+    font-size: 1.4rem;
+}
+
+.select-text{
+    background-color: hsl(176, 50%, 47%);
+}
+
+.select-reward-text{
+    color: hsl(0,0%,100%);
+}
+.out-of-stock{
+    background-color: rgba(218, 214, 214, 0.9) 
+}
+/*styling of fourth section end*/
+.back-text{
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.modal-close{
+    height: 15px;
+}
+.modal-about-text{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: hsl(0,0%,48%);
+}
+
+.modal-pledge-boxes{
+    border: 1px solid hsl(0,0%,48%);
+    border-radius: 6px;
+}
+
+.radio-background{
+    background-color: hsl(176, 72%, 28%);
+    border: 1px solid green;
+}
+
+.rad{
+    border:1px solid green;
+}
+
+.click-pledge:hover{
+    text-decoration: none; 
+}
+
+.pledge-no-reward{
+    font-size: 1.6rem;
+    color:hsl(176, 72%, 28%);
+    padding:15px;
+    font-weight: 700;
+    /* padding-left: 0%; */
+}
+
+.pledge-paragraph{
+    font-size: 1.4rem;
+    color: hsl(0,0%,48%);
+    font-weight: 600;
+}
+
+.modal-left{
+    position: absolute;
+   right: 0;
+   
+}
+
+.modal-number-left{
+    color: hsl(0,0%,48%);
+    font-weight: 400;
+}
+
+/* styling of the collapse start */
+
+.collapse-data{
+    color:hsl(0,0%,48%);
+font-size: 1.4rem;
+font-weight: 700;
+}
+
+.collapse-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card{
+    border-top:1px solid hsl(0,0%,48%) ;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-radius: none;
+}
+
+.btn{
+    border:none!important;
+}
+
+.pledge-amount{
+    position: absolute;
+    right:25%;
+    font-weight: 700;
+    padding-top:10%;
+    padding-bottom:10%;
+    /* color: hsl(176, 72%, 28%); */
+
+}
+
+input::placeholder{
+    color:hsl(0, 0%, 0%)
+}
+
+.input-dollar-sign{
+    position: absolute;
+    right: 40%;
+    z-index:99;
+    top: 54%;
+    left: 57%;
+}
+
+.pledge-amount{
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.pledge-amount:hover{
+    border: 1px solid hsl(176, 72%, 28%);
+}
+.collapse-button{
+    height: 40px;
+    width:100px;
+    border-radius: 30px;
+    font-weight: 700;
+}
+
+.btn-continue{
+background-color: hsl(176, 50%, 47%);
+border:none;
+color:hsl(0,0%,100%);
+font-weight: 700;
+font-size: 1.6rem;
+}
+
+.btn-continue:hover{
+background-color: hsl(176, 72%, 28%);
+}
+
+/* thanks support styling start */
+.support-thanks{
+    border: 1px solid green;
+    background-color: hsl(0,0%,100%);
+    position: absolute;
+    z-index: 99;
+    top: 10%;
+    right: 10%;
+    text-align: center;
+    width: 80%;
+    margin:auto;
+    border: 10px;
+    /* box-shadow: 2px 2px 2px 2px hsl(0,0%,100%); */
+}
+
+.support-thanks-headings{
+    color: hsl(0, 0%, 0%);
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.support-pledge-text{
+    font-size: 1.5rem;
+    color: hsl(0,0%,48%);
+    font-weight: 500;
+
+}
+
+.got-it-button{
+ border: 10px;
+ background-color: hsl(176, 50%, 47%);
+ border: none;
+ padding: 10px 25px;
+ border-radius: 20px; 
+}
+
+.got-it-text{
+    color:hsl(0,0%,100%);  
+    font-size: 1.6rem;
+}
+
+.popover-modal{
+position: absolute;
+top: -349px;
+z-index: 99;
+background-color: rgb(173, 132, 132);
+left: 0;
+}
+
+/* =======================MEDIA QUERY START HERE============================== */
+@media screen and (max-width:1024px){
+    .master-heading{
+        font-size: 2rem;
+    }
+    
+    .master-text{
+        font-size: 1.2rem;
+    }
+    
+    .icon-bookmarked{
+        right: 30%;
+    }
+
+    .left{
+        left: 12%;
+    }
+
+    .black-left{
+        left: 8%;
+    }
+
+    .mahogany-left{
+        left: 4%;
+    }
+}
+@media screen and (max-width:990px){
+    .logo-mastercraft{
+        margin-top: -7%;
+
+    }
+    .icon-bookmarked{
+        right: 31%;
+    }
+    
+@media screen and (max-width:900px){
+   
+    .icon-bookmarked{
+        right: 34%;
+    }
+
+    .master-text{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (min-width:768px){
+  
+}
+
+@media screen and (max-width:768px){
+    .logo-mastercraft{
+        margin-top: -5%;
+    }
+
+    .master-heading{
+        font-size: 1.8rem;
+    }
+
+    .master-text{
+        font-size:1rem;
+}
+    .icon-bookmarked{
+        right: 39%;
+        top: 29%;
+}
+
+    .bookmark-link{
+        font-size: 1rem;
+        padding: 0;
+    }
+
+    .left{
+    left: 15%;
+
+    }
+
+    .black-left{
+        left: 10%;
+    }
+
+    .mahogany-left{
+        left: 4%;
+    }
+
+    .tracker-datas{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:767px){
+    .overlay{
+        height:100%;
+        width: 0;
+        top: 0;
+        left: 0;
+        position: fixed;
+        z-index:1;
+        overflow-x:hidden;
+        transition: 0.5s;
+        display: block;
+    }
+
+    .overlay-contentlists{
+        position: absolute;
+        top: 25%;
+        width: 70%;
+        margin-top: -36px;
+        background: hsl(0,0%,100%);
+        margin-left: 15%;
+        border-radius: 5px;
+        padding-left: 20px;
+        border: 1px solid green;
+    }
+
+    .overlay .overlay-item{
+        display: block;
+        text-decoration: none;
+        padding: 20px;
+        color: hsl(0, 0%, 0%);
+        transition: 0.3s;
+    }
+
+    .overlay-link{
+        color: hsl(0, 0%, 0%);
+        text-transform: capitalize;
+        font-weight: 700;
+        width: 100%;
+        font-size: 1.6rem;
+
+    }
+    .discover{
+        border-top: 1px solid hsl(0,0%,48%);
+        border-bottom: 1px solid hsl(0,0%,48%);
+    }
+
+    .header-box{
+        background-image: url(../images/image-hero-mobile.jpg);
+        background-size: cover;
+        height: 600px;
+        background-repeat: no-repeat;
+    }
+
+    .lists-box{
+        display: none;
+    }
+
+    .hamburger-icon{
+        display: block;
+    }
+
+    .mastercraft-container{
+        width: 90%;
+        margin: auto;
+        margin-top: 33%;
+   }
+
+   .mastercraft-button{
+       display: flex;
+       justify-content:center;
+   }
+
+   .icon-bookmarked-box{
+       display: none;
+   }
+
+   .button{
+       width: 250px;
+       font-size: 2.4rem;
+       margin-left: -20%;
+       padding-bottom: 15px;
+       background-color: hsl(176, 50%, 47%);
+   }
+
+   .bookmark-link{
+       font-size: 1.5rem;
+       text-align: center;
+   }
+
+   .phone-bookmark{
+    display: block;
+    position: absolute;
+    right: 30%;
+    }
+
+   .master-heading{
+       width: 52%;
+       margin: auto;
+       font-size:2.5rem;
+   }
+
+   .master-text{
+    width: 48%;
+    margin: auto;
+       font-size: 1.4rem;
+   }
+
+   .icon-bookmarked{
+       right: 22%;
+   }
+
+   .trackers-headings{
+       text-align: center;
+       margin: auto;
+   }
+
+   .total-border{
+       border-top: 1px solid hsl(0,0%,48%);
+       border-bottom: 1px solid hsl(0,0%,48%);
+       border-right: none;
+       border-left: none;
+       width:100px;
+       margin:auto;
+    }
+
+    .tracker-space{
+        padding:10px;
+        font-weight: 700;
+    }
+
+    .tracker-space h1{
+        font-weight: 700;
+    }
+
+    .tracker-datas{
+        font-size: 1.2rem;
+    }
+
+    .about-text{
+        width: 100%;
+        font-size: 1.4rem;
+    }
+
+    .select-text{
+        width: 150px;
+        font-size: 1.4rem;
+        margin-left: 0;
+        margin-top: 3%;
+    }
+
+    .bamboo-stand-headings{
+        display: block;
+    }
+
+    .bamboo-stand-headings h4{
+        padding: 3px;
+    }
+
+    .left{
+        left: 8%;
+        top:24%;
+    }
+
+    .black-left{
+        left: 6%;
+    }
+
+    .mahogany-left{
+        left: 3%;
+    }
+    
+    
+}
+
+@media screen and (max-width:600px){
+    .logo-mastercraft{
+        margin-top: -6%;
+    }
+
+    .master-heading{
+        font-size: 3rem;
+        width: 70%;
+
+    }
+
+    .master-text{
+        font-size: 1.4rem;
+        width: 60%;
+    }
+
+    .button{
+        width: 200px;
+    }
+
+    .phone-bookmark{
+        right: 26%;
+    }
+
+    .left{
+        left: 11%;
+        top:24%;
+    }
+
+    .black-left{
+        left: 7%;
+    }
+
+    .mahogany-left{
+        left: 3%;
+    }
+
+    .select-text{
+        width: 140px;
+    }
+
+}
+
+
+@media screen and (max-width:425px){
+    .logo-mastercraft{
+        margin-top: -8%;
+    }
+
+    .header-box{
+        height: 540px;
+    }
+    
+    .header-contents{
+        padding: 20px;
+    }
+    .master-heading{
+        font-size: 2rem;
+    }
+
+    .master-text{
+        width: 80%;
+    }
+
+    .button{
+        /* width: 150px; */
+        margin-left: -39%;
+        padding-top: 10px;
+    }
+
+    .phone-bookmark{
+        right: 19%;
+    }
+
+    .select-text{
+        width: 140px;
+        margin-left: 0;
+    }
+
+    .left{
+        left: 15%;
+        top:24%;
+    }
+
+    .black-left{
+        left: 10%;
+    }
+
+    .mahogany-left{
+        left: 4%;
+    }
+
+ 
+    }
+@media screen and (max-width:375px){
+
+    .master-text{
+        width: 90%;
+    }
+
+    .phone-bookmark{
+        right: 11%;
+    }
+
+    .left{
+        left: 17%;
+        top:24%;
+    }
+
+    .black-left{
+        left: 12%;
+    }
+
+    .mahogany-left{
+        left: 6%;
+    }
+    }
+
+    @media screen and (max-width:320px){
+        .master-heading{
+            width: 100%;
+        }
+
+        .button{
+            width: 130px;
+            padding: 0px 0px 5px 0;
+        }
+
+        .phone-bookmark{
+            height: 39px;
+            right: 21%;
+        }
+    }
+     /* =======================MEDIA QUERY START HERE============================== */  

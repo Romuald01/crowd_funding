@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+    <title>Frontend Mentor | Crowdfunding product page</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div id="myNav" class="overlay">
+    <ul class="overlay-contentlists">
+      <li class="overlay-item"><a href="#" class="overlay-link">about</a></li>
+      <li class="overlay-item"><a href="#" class="overlay-link discover">discover</a></li>
+      <li class="overlay-item"><a href="#" class="overlay-link">get started</a></li>
+    </ul>
+  </div>
+<div class="container-fluid">
+  <!-- header start -->
+    <div class="row header-box">
+      <div class="container">
+          <div class="row header-contents mt-5">
+            <div class="crowdfund-logo-box">
+              <img src="images/logo.svg" alt="logo" class="crowdfund-logo">
+            </div>
+            <div class="lists-box">
+              <ul class="lists">
+                <li class="list-item"><a href="#" class="list-link">About</a></li>
+                <li class="list-item"><a href="#" class="list-link">Discover</a></li>
+                <li class="list-item"><a href="#" class="list-link">Get Started</a></li>
+              </ul>
+            </div>
+            <span class="hamburger-icon"><img src="images/icon-hamburger.svg" alt="icon-hamburger" id="hamburger-icon"></span>
+           <span class="close-icon"><img src="images/icon-close-menu.svg" alt="icon-close-menu" id="close-icon"></span>
+          </div>
+
+      </div>
+    </div>
+  <!-- header end -->
+  <!-- second section start-->
+  <div class="container-fluid mastercraft-container">
+    <!-- first-segment start -->
+    <div class="row first-segment-content">
+      <div class="col-md-12">
+        <div class="row mastercraft-box">
+          <div class="col-md-12 mastercraft">
+            <div class="mastercraft-bamboo">
+                <img src="images/logo-mastercraft.svg" alt="logo-mastercraft" class="logo-mastercraft">
+              <div class="masters-text-box">
+                <h1 class="master-heading mt-5">Mastercraft Bamboo Monitor Riser</h1>
+                <h3 class="master-text">A beautiful & handcrafted monitor stand to reduce neck and eye strain.</h3>
+              </div>
+            </div>  
+            <div class="mastercraft-button pt-5 px-5 pb-5" style="border:en">
+                    <div class="button back-projec-text bookmark-content">
+                      <a href="#" class="bookmark-link" onclick="support()" id="thankSupport">Back this project</a>
+                    </div>
+                       <!-- Success modal start -->
+                    <div class="row support-thanks p-5" id="thankSupportContent" style="display: none;">
+                     <img src="images/icon-check.svg" alt="icon-check">
+                      <h3 class="support-thanks-headings mt-5">Thanks for your support!</h3>
+                      <p class="support-pledge-text pt-3">Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
+                      an email once our campaign is completed.
+                     </p>
+                     <button class="got-it-button mt-3"><a href="#" class="got-it-text">Got it!</a></button>
+                    </div>
+                    <!-- Success modal end -->
+                    <div class="button icon-bookmarked-box" id="icon-bookmarked-box">
+                      <img src="images/icon-bookmark.svg" onclick="bookmarked()" alt="icon-bookmark" id="icon-bookmarked" class="icon-bookmarked">
+                      <a href="#" class="bookmark-link change-link icon-bookmarked-text bookmark-content bookmark-change" id="icon-bookmarked-text">
+                        Bookmark</a>
+                    </div>
+                    <img src="images/icon-bookmark.svg" alt="phone-bookmark" class="phone-bookmark">
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5 tracker-box px-5">
+          <div class="col-md-12 trackers-headings">
+            <div class="row py-5">                                                                                                               
+              <div class="col-md-4 tracker-space">
+                <span><h1>$89,914 </h1></span>
+                <span><h5 class="tracker-datas">of $100,000 backed</h5></span>
+              </div>
+              <div class="col-md-4 tracker-space total-border">
+                <span><h1>5,007</h1></span>
+                <span><h5 class="tracker-datas">total backers</h5></span>
+              </div>
+              <div class="col-md-4 tracker-space">
+                <span><h1>56</h1></span>
+                <span><h5 class="tracker-datas">days left</h5></span>
+              </div>
+            </div>
+          </div> 
+          <div class="col-md-12 pb-5">
+            <div class="progress progrress-bardiv m">
+              <div class="progress-bar" role="progressbar" style="width:75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- first-segment end -->
+    <!-- <div class="co mt-5" "> -->
+    <!-- second-segment start here -->
+    <div class="row">
+      <div class="col-md-12 second-segment-content mt-5">
+        <div class="row mt-5 about-box">
+          <div class="about-proect">
+              <h1 class="pb-5 about-heading">About this project</h1>
+              <p class="about-text">
+                  The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen 
+                  to a more comfortable viewing height. Placing your monitor at eye level has the potential to improve 
+                  your posture and make you more comfortable while at work, helping you stay focused on the task at hand.
+                </p>
+
+              <p class=" about-text pt-5">
+              Featuring artisan craftsmanship, the simplicity of design creates extra desk space below your computer 
+              to allow notepads, pens, and USB sticks to be stored under the stand.</p>
+            
+          </div>
+        </div>
+        <!-- bamboo stands 1 start -->
+        <div class="row mt-5 bamboo-stand-box">
+          <div class="bamboo-stand-contents p-5">
+              <div class="bamboo-stand-headings">
+                <h4>Bamboo Stand</h4>
+                <h4 class="pledges">Pledge $25 or more</h4>
+              </div>
+              <p class="bamboo-stand-paragraph mt-5">
+                You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and 
+                you’ll be added to a special Backer member list.
+              </p>
+              <div class=" bamboo-stand-headings pt-3">
+                <h1 class="stands-number">101<span class="left">left</span></h1>
+                <div class="button back-project-text bookmark-content py-3 select-text"><a href="#" class="select-reward-text" onclick="popovermodalbox()">Select Reward</a></div>
+              </div>
+          </div>
+        </div>
+        <!------------------------------Selection modal start---------------------- -->
+<div class="container-fluid popover-modal  mt-5" id="popovermodal" style="border:1px solid green;display:none;" >
+  <div class="row mt-5 selected-modal-box p-4">
+    <div class="col-md-12 selected-modal">
+      <h4 class="back-text">Back this project</h4>
+      <a href="#"><img src="images/icon-close-modal.svg" alt="close-modal" onclick="close()" class="modal-close"></a> 
+    </div>
+    <div class="col-md-12 modal-about-div pt-3">
+      <p class="modal-about-text">
+        Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?
+      </p>
+    </div>
+  </div>
+  <div class="row mt-5 modal-pledge-boxes p-4">
+  <!-- first modal pledges start -->
+  <div class="col-md-12">
+    <!-- toggling of the collapse code -->
+      <p>
+        <a class="btn btn-priary" data-toggle="collapse" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+            <input type="radio" class="radio-background" onclick="radioBackground()" id="radiobackground">
+            <span class="pledge-no-reward">Pledge with no reward</span>
+          </a><!-- toggling of the collapse code -->
+      </p>
+  </div>
+  <div class="col-md-12">
+    <p class="pledge-paragraph  pl-5">Choose to support us without a reward if you simply believe in our project. As a backer, 
+      you will be signed up to receive product updates via email.
+    </p>
+  </div>
+  <!-- content of the collapse -->
+  <div class="col-md-12">
+    <div class="collapse pt-3" id="collapseExample1">
+      <div class="card card-body">
+        <form action="#" class="collapse-form pt-5">
+          <p class="collapse-data">
+            Enter your pledge
+          </p>
+            <h4 class="input-dollar-sign">$</h4>
+            <input type="number"  class="collapse-button pledge-amount">
+            <input type="submit" value="continue" class="collapse-button btn-continue">
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- content of the collapse -->
+  <!-- first modal pledges end -->
+  <!-- </div> -->
+                  <!-- second modal pledges start -->
+                  <div class="row mt-5 modal-pledge-boxes p-4">
+                    <!-- first modal pledges start -->
+                    <div class="col-md-12">
+                      <!-- toggling of the collapse code -->
+                        <p>
+                          <a class="btn btn-priary" data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                              <!-- <input type="radio" class="radio-background" onclick="radioBackground()" id="radiobackground">
+                              <span class="pledge-no-reward">Pledge with no reward</span> -->
+                                <input type="radio" class="rad" required>
+                                <span class="pledge-no-reward">Bamboo Stand
+                                  <span class="modal-pledge pl-4">
+                                    Pledge $25 or more
+                                  </span>
+                                <span class="modal-left">101
+                                  <span class="modal-number-left">left</span>
+                                </span>
+                              </span>
+                            </a>
+                        </p>
+                      <!-- toggling of the collapse code -->
+                    </div>
+                    <div class="col-md-12">
+                      <p class="pledge-paragraph  pl-5">Choose to support us without a reward if you simply believe in our project. As a backer, 
+                        you will be signed up to receive product updates via email.
+                      </p>
+                    </div>
+                    <!-- content of the collapse -->
+                    <div class="col-md-12">
+                      <div class="collapse pt-3" id="collapseExample2">
+                        <div class="card card-body">
+                          <form action="#" class="collapse-form pt-5">
+                            <p class="collapse-data">
+                              Enter your pledge
+                            </p>
+                              <h4 class="input-dollar-sign">$</h4>
+                              <input type="number"  class="collapse-button pledge-amount">
+                              <input type="submit" value="continue" class="collapse-button btn-continue">
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- content of the collapse -->
+                    <!-- first modal pledges end -->
+                  </div>
+                  <!-- second modal pledges ends -->
+
+                  <!-- third modal pledges start -->
+                  <div class="row mt-5 modal-pledge-boxes p-4">
+                    <!-- first modal pledges start -->
+                    <div class="col-md-12">
+                      <!-- toggling of the collapse code -->
+                        <p>
+                          <a class="btn btn-priary" data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+                              <!-- <input type="radio" class="radio-background" onclick="radioBackground()" id="radiobackground">
+                              <span class="pledge-no-reward">Pledge with no reward</span> -->
+                                <input type="radio" class="rad" required>
+                                <span class="pledge-no-reward">Black Edition Stand
+                                  
+                                  <span class="modal-pledge pl-4">
+                                    Pledge $75 or more
+                                  </span>
+                                <span class="modal-left">64
+                                  <span class="modal-number-left">left</span>
+                                </span>
+                              </span>
+                            </a><!-- toggling of the collapse code -->
+                        </p>
+                    </div>
+                    <div class="col-md-12">
+                      <p class="pledge-paragraph  pl-5">You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
+                        member list. Shipping is included.
+                        
+                      </p>
+                    </div>
+                    <!-- content of the collapse -->
+                    <div class="col-md-12">
+                      <!-- <hr> -->
+                      <div class="collapse pt-3" id="collapseExample3">
+                        <div class="card card-body">
+                          <form action="#" class="collapse-form pt-5">
+                            <p class="collapse-data">
+                              Enter your pledge
+                            </p>
+                              <h4 class="input-dollar-sign">$</h4>
+                              <input type="number"  class="collapse-button pledge-amount">
+                              <input type="submit" value="continue" class="collapse-button btn-continue">
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- content of the collapse -->
+                    <!-- first modal pledges end -->
+                  </div>
+                  <!-- fourth modal pledges start-->
+                  <div class="row mt-5 modal-pledge-boxes p-4">
+                    <!-- first modal pledges start -->
+                    <div class="col-md-12">
+                      <!-- toggling of the collapse code -->
+                        <p>
+                          <a class="btn btn-priary" data-toggle="collapse" href="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
+                              <!-- <input type="radio" class="radio-background" onclick="radioBackground()" id="radiobackground">
+                              <span class="pledge-no-reward">Pledge with no reward</span> -->
+                                <input type="radio" class="rad" required>
+                                <span class="pledge-no-reward">Mahogany Special Edition
+                                  <span class="modal-pledge pl-4">
+                                    Pledge $20 or more
+                                  </span>
+                                <span class="modal-left">0
+                                  <span class="modal-number-left">left</span>
+                                </span>
+                              </span>
+                            </a><!-- toggling of the collapse code -->
+                        </p>
+                    </div>
+                    <div class="col-md-12">
+                      <p class="pledge-paragraph  pl-5">
+                        You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
+                        to our Backer member list. Shipping is included.
+                      </p>
+                    </div>
+                    <!-- content of the collapse -->
+                    <div class="col-md-12">
+                      <!-- <hr> -->
+                      <div class="collapse pt-3" id="collapseExample4">
+                        <div class="card card-body">
+                          <form action="#" class="collapse-form pt-5">
+                            <p class="collapse-data">
+                              Enter your pledge
+                            </p>
+                              <h4 class="input-dollar-sign">$</h4>
+                              <input type="number"  class="collapse-button pledge-amount">
+                              <input type="submit" value="continue" class="collapse-button btn-continue">
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- content of the collapse -->
+                  </div>
+                  <!-- fourth modal pledges ends-->
+  </div>  
+</div>
+            
+<!------------------------------Selection modal ends---------------------- -->
+           
+        <!-- bamboo stands 1 ends -->
+        <!-- bamboo stands 2 start -->
+        <div class="row mt-5 bamboo-stand-box">
+          <div class="bamboo-stand-contents  p-5">
+            <div class="bamboo-stand-headings">
+              <h4>Black Edition Stand</h4>
+              <h4 class="pledges">Pledge $75 or more</h4>
+            </div>
+            <p class="bamboo-stand-paragraph mt-5">
+              You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer 
+              member list. Shipping is included.
+            </p>
+            <div class=" bamboo-stand-headings pt-3">
+              <h1 class="stands-number">64<span class="left black-left">left</span></h1>
+              <div class="button back-project-text bookmark-content py-3 select-text"><a href="#" class="select-reward-text"> Select Reward</a></div>
+            </div>
+          </div>
+        </div>
+        <!-- bamboo stands 2 ends -->
+        <!-- bamboo stands 3 start -->
+          <div class="row mt-5 bamboo-stand-box">
+            <div class="bamboo-stand-contents  p-5">
+                <div class="bamboo-stand-headings">
+                  <h4 class="mahogany-special-heading">Mahogany Special Edition</h4>
+                  <h4 class="pledges mahogany-special-pledge">Pledge $200 or more</h4>
+                </div>
+                <p class="bamboo-stand-paragraph mt-5 mahogany-special-paragraph">
+                  You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added 
+                  to our Backer member list. Shipping is included.
+                </p>
+                <div class=" bamboo-stand-headings pt-3">
+                  <h1 class="stands-number">0<span class="left mahogany-left">left</span></h1>
+                  <div class="button back-project-text bookmark-content py-3 select-text out-of-stock"><a href="#" class="select-reward-text">Out of Stock</a></div>
+                </div>
+            </div>
+          </div>
+        <!-- bamboo stands 3 ends -->
+            
+  </div> <!--div of middle container-->
+</div>   <!-- main-body closed div -->
+
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

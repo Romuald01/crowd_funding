@@ -1,0 +1,11 @@
+{
+  "name": "crowd_funding",
+  "version": "1.0.0",
+  "description": "crowd_funding_landing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Romuald Software Engineer",
+  "license": "ISC"
+}
