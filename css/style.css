@@ -847,15 +847,16 @@ left: 0;
             height: 39px;
             right: 21%;
         }
+
+        .left{
+            left: 20%;
+            top:24%;
+        }
+    
+        .black-left{
+            left: 15%;
+        }
     }
      /* =======================MEDIA QUERY START HERE============================== */  
     
 }
-
-
-.hide{
-    display: none;
-}
- .show{
-    display: block;
- }
