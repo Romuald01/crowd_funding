@@ -1,9 +1,4 @@
 
-/* - Moderate cyan: hsl(176, 50%, 47%)
-- Dark cyan: hsl(176, 72%, 28%)
-- Black: hsl(0, 0%, 0%)
-- Dark gray: hsl(0, 0%, 48%) */
-
 
 *{
     margin: 0;
@@ -20,13 +15,20 @@ html{
     font-size: 62.5%;
 }
 
+.no-scroll{
+    overflow: hidden;
+}
+
 /* header styling start */
-.header-box{
+.header{
     background-image: url(../images/image-hero-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;  
     height:400px;
 
+}
+.hamburger-change{
+    display: none;
 }
 
 .header-contents,.selected-modal{
@@ -34,19 +36,20 @@ html{
     justify-content: space-between;
    }
 
-.lists .list-item{
+ .lists-box{
+    margin-top:-1%;
+   
+}
+
+.list-item{
     display: inline-block;
-    list-style: none;
+    list-style-type: none;
     font-size: 1.8rem;
     padding: 10px;
-    color: hsl(0,0%,100%)
+    color: red;
 }
 
-.lists-box{
-    margin-top:-1%;
-}
-
-.hamburger-icon,.close-icon,.overlay,.phone-bookmark{
+.overlay,.phone-bookmark{
     display: none;
 }
 
@@ -56,7 +59,7 @@ html{
     color: hsl(0,0%,100%);
 }
 /* header styling start */
-
+    
 /* mastercraft container div styling */
 .mastercraft-container{
     position: absolute;
@@ -71,8 +74,6 @@ html{
 
     .container-fluid .about-this-project-box{
      background-color: hsl(0,0%,100%);   
-     /* padding-right: 0 !important;
-     padding-left: 0 !important; */
     }
 
 
@@ -237,7 +238,6 @@ border: 1px solid rgba(160, 158, 158, 0.9) ;
 color: hsl(176, 45%, 67%);
 }
 
-
 .stands-number{
     font-size: 3rem;
 }
@@ -370,7 +370,6 @@ input::placeholder{
     padding: 20px;
     font-size: 1.5rem;
 }
-
 .pledge-amount:hover{
     border: 1px solid hsl(176, 72%, 28%);
 }
@@ -393,19 +392,24 @@ font-size: 1.6rem;
 background-color: hsl(176, 72%, 28%);
 }
 
-/* thanks support styling start */
-.support-thanks{
-    border: 1px solid green;
+/* support thanks styling start */
+.modal{
     background-color: hsl(0,0%,100%);
     position: absolute;
     z-index: 99;
-    top: 10%;
     right: 10%;
     text-align: center;
     width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin:auto;
     border: 10px;
-    /* box-shadow: 2px 2px 2px 2px hsl(0,0%,100%); */
+    box-shadow: 3px 1px 1px 1px rgb(0, 0, 0,0.2);
+
+}
+.modal-hidden{
+    display: none;
 }
 
 .support-thanks-headings{
@@ -488,7 +492,8 @@ left: 0;
     }
 }
 @media screen and (min-width:768px){
-  
+
+ 
 }
 
 @media screen and (max-width:768px){
@@ -532,6 +537,7 @@ left: 0;
 }
 
 @media screen and (max-width:767px){
+    
     .overlay{
         height:100%;
         width: 0;
@@ -547,21 +553,18 @@ left: 0;
     .overlay-contentlists{
         position: absolute;
         top: 25%;
-        width: 70%;
+        width: 71%;
         margin-top: -36px;
         background: hsl(0,0%,100%);
         margin-left: 15%;
         border-radius: 5px;
-        padding-left: 20px;
-        border: 1px solid green;
     }
 
     .overlay .overlay-item{
-        display: block;
         text-decoration: none;
         padding: 20px;
         color: hsl(0, 0%, 0%);
-        transition: 0.3s;
+        list-style-type: none;
     }
 
     .overlay-link{
@@ -570,8 +573,10 @@ left: 0;
         font-weight: 700;
         width: 100%;
         font-size: 1.6rem;
-
+        transition: 0.3s;
+        display: block;
     }
+
     .discover{
         border-top: 1px solid hsl(0,0%,48%);
         border-bottom: 1px solid hsl(0,0%,48%);
@@ -588,10 +593,10 @@ left: 0;
         display: none;
     }
 
-    .hamburger-icon{
+    .hamburger-change{
         display: block;
+        z-index:9999;
     }
-
     .mastercraft-container{
         width: 90%;
         margin: auto;
@@ -706,6 +711,11 @@ left: 0;
 }
 
 @media screen and (max-width:600px){
+
+    .overlay-contentlists{
+        width: 90%;
+        margin-left: 5%;
+    }
     .logo-mastercraft{
         margin-top: -6%;
     }
@@ -839,3 +849,13 @@ left: 0;
         }
     }
      /* =======================MEDIA QUERY START HERE============================== */  
+    
+}
+
+
+.hide{
+    display: none;
+}
+ .show{
+    display: block;
+ }

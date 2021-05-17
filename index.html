@@ -5,11 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
-    <title>Frontend Mentor | Crowdfunding product page</title>
+  <title>Frontend Mentor | Crowdfunding product page</title>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -21,29 +20,32 @@
   <div id="myNav" class="overlay">
     <ul class="overlay-contentlists">
       <li class="overlay-item"><a href="#" class="overlay-link">about</a></li>
-      <li class="overlay-item"><a href="#" class="overlay-link discover">discover</a></li>
+      <li class="overlay-item discover"><a href="#" class="overlay-link">discover</a></li>
       <li class="overlay-item"><a href="#" class="overlay-link">get started</a></li>
     </ul>
   </div>
 <div class="container-fluid">
   <!-- header start -->
-    <div class="row header-box">
+    <div class="row header">
       <div class="container">
-          <div class="row header-contents mt-5">
-            <div class="crowdfund-logo-box">
-              <img src="images/logo.svg" alt="logo" class="crowdfund-logo">
-            </div>
-            <div class="lists-box">
-              <ul class="lists">
-                <li class="list-item"><a href="#" class="list-link">About</a></li>
-                <li class="list-item"><a href="#" class="list-link">Discover</a></li>
-                <li class="list-item"><a href="#" class="list-link">Get Started</a></li>
-              </ul>
-            </div>
-            <span class="hamburger-icon"><img src="images/icon-hamburger.svg" alt="icon-hamburger" id="hamburger-icon"></span>
-           <span class="close-icon"><img src="images/icon-close-menu.svg" alt="icon-close-menu" id="close-icon"></span>
+        <div class="row header-contents mt-5">
+          <div class="crowdfund-logo-box">
+            <img src="images/logo.svg" alt="logo" class="crowdfund-logo">
           </div>
-
+          <!-- mobile hamburger start -->
+          <div class="hamburger-change">
+            <span id="hamburger-icon" ><img src="images/icon-hamburger.svg" alt="icon-hamburger"></span>
+            <span id="close-icon"><img src="images/icon-close-menu.svg" alt="close-icon"></span>
+          </div>
+          <!-- mobile hamburger end-->
+          <div class="lists-box">
+            <ul class="lists">
+              <li class="list-item"><a href="#" class="list-link">Discover</a></li>
+              <li class="list-item"><a href="#" class="list-link">About</a></li>
+              <li class="list-item"><a href="#" class="list-link">Get Started</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   <!-- header end -->
@@ -61,18 +63,18 @@
                 <h3 class="master-text">A beautiful & handcrafted monitor stand to reduce neck and eye strain.</h3>
               </div>
             </div>  
-            <div class="mastercraft-button pt-5 px-5 pb-5" style="border:en">
+            <div class="mastercraft-button pt-5 px-5 pb-5" style="border:red">
                     <div class="button back-projec-text bookmark-content">
-                      <a href="#" class="bookmark-link" onclick="support()" id="thankSupport">Back this project</a>
+                      <a href="#" class="bookmark-link" id="show-modal">Back this project</a>
                     </div>
                        <!-- Success modal start -->
-                    <div class="row support-thanks p-5" id="thankSupportContent" style="display: none;">
-                     <img src="images/icon-check.svg" alt="icon-check">
-                      <h3 class="support-thanks-headings mt-5">Thanks for your support!</h3>
-                      <p class="support-pledge-text pt-3">Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
-                      an email once our campaign is completed.
-                     </p>
-                     <button class="got-it-button mt-3"><a href="#" class="got-it-text">Got it!</a></button>
+                    <div class="modal p-5 modal-hidden">
+                      <img src="images/icon-check.svg" alt="icon-check">
+                        <h3 class="support-thanks-headings mt-5">Thanks for your support!</h3>
+                        <p class="support-pledge-text pt-3">Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
+                        an email once our campaign is completed.
+                      </p>
+                      <button class="got-it-button mt-3" id="modal_close"><a href="#" class="got-it-text">Got it!</a></button>
                     </div>
                     <!-- Success modal end -->
                     <div class="button icon-bookmarked-box" id="icon-bookmarked-box">
@@ -146,198 +148,6 @@
               </div>
           </div>
         </div>
-        <!------------------------------Selection modal start---------------------- -->
-<div class="container-fluid popover-modal  mt-5" id="popovermodal" style="border:1px solid green;display:none;" >
-  <div class="row mt-5 selected-modal-box p-4">
-    <div class="col-md-12 selected-modal">
-      <h4 class="back-text">Back this project</h4>
-      <a href="#"><img src="images/icon-close-modal.svg" alt="close-modal" onclick="close()" class="modal-close"></a> 
-    </div>
-    <div class="col-md-12 modal-about-div pt-3">
-      <p class="modal-about-text">
-        Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?
-      </p>
-    </div>
-  </div>
-  <div class="row mt-5 modal-pledge-boxes p-4">
-  <!-- first modal pledges start -->
-  <div class="col-md-12">
-    <!-- toggling of the collapse code -->
-      <p>
-        <a class="btn btn-priary" data-toggle="collapse" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
-            <input type="radio" class="radio-background" onclick="radioBackground()" id="radiobackground">
-            <span class="pledge-no-reward">Pledge with no reward</span>
-          </a><!-- toggling of the collapse code -->
-      </p>
-  </div>
-  <div class="col-md-12">
-    <p class="pledge-paragraph  pl-5">Choose to support us without a reward if you simply believe in our project. As a backer, 
-      you will be signed up to receive product updates via email.
-    </p>
-  </div>
-  <!-- content of the collapse -->
-  <div class="col-md-12">
-    <div class="collapse pt-3" id="collapseExample1">
-      <div class="card card-body">
-        <form action="#" class="collapse-form pt-5">
-          <p class="collapse-data">
-            Enter your pledge
-          </p>
-            <h4 class="input-dollar-sign">$</h4>
-            <input type="number"  class="collapse-button pledge-amount">
-            <input type="submit" value="continue" class="collapse-button btn-continue">
-        </form>
-      </div>
-    </div>
-  </div>
-  <!-- content of the collapse -->
-  <!-- first modal pledges end -->
-  <!-- </div> -->
-                  <!-- second modal pledges start -->
-                  <div class="row mt-5 modal-pledge-boxes p-4">
-                    <!-- first modal pledges start -->
-                    <div class="col-md-12">
-                      <!-- toggling of the collapse code -->
-                        <p>
-                          <a class="btn btn-priary" data-toggle="collapse" href="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
-                              <!-- <input type="radio" class="radio-background" onclick="radioBackground()" id="radiobackground">
-                              <span class="pledge-no-reward">Pledge with no reward</span> -->
-                                <input type="radio" class="rad" required>
-                                <span class="pledge-no-reward">Bamboo Stand
-                                  <span class="modal-pledge pl-4">
-                                    Pledge $25 or more
-                                  </span>
-                                <span class="modal-left">101
-                                  <span class="modal-number-left">left</span>
-                                </span>
-                              </span>
-                            </a>
-                        </p>
-                      <!-- toggling of the collapse code -->
-                    </div>
-                    <div class="col-md-12">
-                      <p class="pledge-paragraph  pl-5">Choose to support us without a reward if you simply believe in our project. As a backer, 
-                        you will be signed up to receive product updates via email.
-                      </p>
-                    </div>
-                    <!-- content of the collapse -->
-                    <div class="col-md-12">
-                      <div class="collapse pt-3" id="collapseExample2">
-                        <div class="card card-body">
-                          <form action="#" class="collapse-form pt-5">
-                            <p class="collapse-data">
-                              Enter your pledge
-                            </p>
-                              <h4 class="input-dollar-sign">$</h4>
-                              <input type="number"  class="collapse-button pledge-amount">
-                              <input type="submit" value="continue" class="collapse-button btn-continue">
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- content of the collapse -->
-                    <!-- first modal pledges end -->
-                  </div>
-                  <!-- second modal pledges ends -->
-
-                  <!-- third modal pledges start -->
-                  <div class="row mt-5 modal-pledge-boxes p-4">
-                    <!-- first modal pledges start -->
-                    <div class="col-md-12">
-                      <!-- toggling of the collapse code -->
-                        <p>
-                          <a class="btn btn-priary" data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
-                              <!-- <input type="radio" class="radio-background" onclick="radioBackground()" id="radiobackground">
-                              <span class="pledge-no-reward">Pledge with no reward</span> -->
-                                <input type="radio" class="rad" required>
-                                <span class="pledge-no-reward">Black Edition Stand
-                                  
-                                  <span class="modal-pledge pl-4">
-                                    Pledge $75 or more
-                                  </span>
-                                <span class="modal-left">64
-                                  <span class="modal-number-left">left</span>
-                                </span>
-                              </span>
-                            </a><!-- toggling of the collapse code -->
-                        </p>
-                    </div>
-                    <div class="col-md-12">
-                      <p class="pledge-paragraph  pl-5">You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer
-                        member list. Shipping is included.
-                        
-                      </p>
-                    </div>
-                    <!-- content of the collapse -->
-                    <div class="col-md-12">
-                      <!-- <hr> -->
-                      <div class="collapse pt-3" id="collapseExample3">
-                        <div class="card card-body">
-                          <form action="#" class="collapse-form pt-5">
-                            <p class="collapse-data">
-                              Enter your pledge
-                            </p>
-                              <h4 class="input-dollar-sign">$</h4>
-                              <input type="number"  class="collapse-button pledge-amount">
-                              <input type="submit" value="continue" class="collapse-button btn-continue">
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- content of the collapse -->
-                    <!-- first modal pledges end -->
-                  </div>
-                  <!-- fourth modal pledges start-->
-                  <div class="row mt-5 modal-pledge-boxes p-4">
-                    <!-- first modal pledges start -->
-                    <div class="col-md-12">
-                      <!-- toggling of the collapse code -->
-                        <p>
-                          <a class="btn btn-priary" data-toggle="collapse" href="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
-                              <!-- <input type="radio" class="radio-background" onclick="radioBackground()" id="radiobackground">
-                              <span class="pledge-no-reward">Pledge with no reward</span> -->
-                                <input type="radio" class="rad" required>
-                                <span class="pledge-no-reward">Mahogany Special Edition
-                                  <span class="modal-pledge pl-4">
-                                    Pledge $20 or more
-                                  </span>
-                                <span class="modal-left">0
-                                  <span class="modal-number-left">left</span>
-                                </span>
-                              </span>
-                            </a><!-- toggling of the collapse code -->
-                        </p>
-                    </div>
-                    <div class="col-md-12">
-                      <p class="pledge-paragraph  pl-5">
-                        You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added
-                        to our Backer member list. Shipping is included.
-                      </p>
-                    </div>
-                    <!-- content of the collapse -->
-                    <div class="col-md-12">
-                      <!-- <hr> -->
-                      <div class="collapse pt-3" id="collapseExample4">
-                        <div class="card card-body">
-                          <form action="#" class="collapse-form pt-5">
-                            <p class="collapse-data">
-                              Enter your pledge
-                            </p>
-                              <h4 class="input-dollar-sign">$</h4>
-                              <input type="number"  class="collapse-button pledge-amount">
-                              <input type="submit" value="continue" class="collapse-button btn-continue">
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- content of the collapse -->
-                  </div>
-                  <!-- fourth modal pledges ends-->
-  </div>  
-</div>
-            
-<!------------------------------Selection modal ends---------------------- -->
-           
         <!-- bamboo stands 1 ends -->
         <!-- bamboo stands 2 start -->
         <div class="row mt-5 bamboo-stand-box">
@@ -352,7 +162,7 @@
             </p>
             <div class=" bamboo-stand-headings pt-3">
               <h1 class="stands-number">64<span class="left black-left">left</span></h1>
-              <div class="button back-project-text bookmark-content py-3 select-text"><a href="#" class="select-reward-text"> Select Reward</a></div>
+              <div class="button back-project-text bookmark-content py-3 select-text"><a href="#" class="select-reward-text">Select Reward</a></div>
             </div>
           </div>
         </div>
