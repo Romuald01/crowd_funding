@@ -120,6 +120,19 @@ html{
     padding: 8px 0px 10px;
 }
 
+button{
+    border:none;
+    background-color:hsl(176, 72%, 28%);
+    color: hsl(0,0%,100%);
+
+}
+
+ button:focus{
+    border:none;
+    background-color:hsl(176, 72%, 28%);
+    color: hsl(0,0%,100%);
+}
+
 .bookmark-link{
     color:hsl(0,0%,100%);
     font-weight: 700;
@@ -127,7 +140,10 @@ html{
 }
 
 .icon-bookmarked-text{
-  padding-left:50px;
+  position: absolute;
+  top: 40%;
+  right: 5%;
+justify-content: center;
 }
 
 .bookmark-link:hover{
@@ -145,11 +161,11 @@ color: hsl(0,0%,48%);
 }
 
 .icon-bookmarked{
-    right: 23%;
+    right:23%;
     height: 40px;
     position: absolute;
-    height: 40px;
-    top: 30%;
+    height: 45px;
+    top: 27%;
 } 
 
 .change-link{
@@ -397,17 +413,18 @@ background-color: hsl(176, 72%, 28%);
     background-color: hsl(0,0%,100%);
     position: absolute;
     z-index: 99;
-    right: 10%;
+    right: 1%;
     text-align: center;
     width: 80%;
-    display: flex;
+    display: block;
+    height: 300px;
     justify-content: center;
     align-items: center;
     margin:auto;
     border: 10px;
-    box-shadow: 3px 1px 1px 1px rgb(0, 0, 0,0.2);
-
+    box-shadow: 2px 3px 4px 10px rgb(0, 0, 0,0.2);
 }
+
 .modal-hidden{
     display: none;
 }
@@ -439,11 +456,21 @@ background-color: hsl(176, 72%, 28%);
 }
 
 .popover-modal{
-position: absolute;
-top: -349px;
-z-index: 99;
-background-color: rgb(173, 132, 132);
-left: 0;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    display: none;
+    right:0%;
+    background-color: #fff;
+    box-shadow: 2px 3px 4px 10px rgb(0, 0, 0,0.2);
+}
+.modal-left{
+    display: none;
+}
+
+.close-btn{
+    border:none;
+    background: none;
 }
 
 /* =======================MEDIA QUERY START HERE============================== */
@@ -458,6 +485,10 @@ left: 0;
     
     .icon-bookmarked{
         right: 30%;
+    }
+
+    .icon-bookmarked-text{
+        right: 7%;
     }
 
     .left{
@@ -480,6 +511,10 @@ left: 0;
     .icon-bookmarked{
         right: 31%;
     }
+    .icon-bookmarked-text{
+     right: 10%;
+    }
+
     
 @media screen and (max-width:900px){
    
@@ -509,12 +544,12 @@ left: 0;
         font-size:1rem;
 }
     .icon-bookmarked{
-        right: 39%;
-        top: 29%;
+        right: 32%;
+        top: 27%;
 }
 
     .bookmark-link{
-        font-size: 1rem;
+        font-size: 1.2rem;
         padding: 0;
     }
 
@@ -618,11 +653,20 @@ left: 0;
        margin-left: -20%;
        padding-bottom: 15px;
        background-color: hsl(176, 50%, 47%);
-   }
+       }
+
+       .button button{
+        background-color: hsl(176, 50%, 47%);
+       }
 
    .bookmark-link{
        font-size: 1.5rem;
        text-align: center;
+   }
+
+   .back-project-text{
+       border:none;
+       background-color: hsl(176, 50%, 47%);
    }
 
    .phone-bookmark{
@@ -706,7 +750,22 @@ left: 0;
     .mahogany-left{
         left: 3%;
     }
+
+    /* pledges modal mobile styling start */
+    .popover-modal{
+        left:0%; 
+    }    
+
+    .pledge-no-reward{
+        /* display: block; */
+    }
+
+    .modal-left{
+        display: block;
+    }
+      /* pledges modal mobile styling end */
     
+
     
 }
 
@@ -785,6 +844,10 @@ left: 0;
         padding-top: 10px;
     }
 
+    .modal{
+        height: 368px;
+    }
+
     .phone-bookmark{
         right: 19%;
     }
@@ -806,8 +869,16 @@ left: 0;
     .mahogany-left{
         left: 4%;
     }
+    
+    /* pledge modal responsiveness styling start*/
+    .btn-continue{
+    margin-right: -12%;
+    }
 
- 
+
+
+    /* pledge modal responsiveness styling end*/
+
     }
 @media screen and (max-width:375px){
 
@@ -837,15 +908,9 @@ left: 0;
         .master-heading{
             width: 100%;
         }
-
-        .button{
-            width: 130px;
-            padding: 0px 0px 5px 0;
-        }
-
         .phone-bookmark{
-            height: 39px;
-            right: 21%;
+            height: 55px;
+            right: 2%;
         }
 
         .left{
@@ -856,6 +921,10 @@ left: 0;
         .black-left{
             left: 15%;
         }
+        
+    .modal{
+        height: 430px;
+    }
     }
      /* =======================MEDIA QUERY START HERE============================== */  
     

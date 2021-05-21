@@ -13,29 +13,23 @@ bookMarkedLogo.style.display = "block";
   // })
 
   // CODE FOR THANKS SUPPORT START
-const toggleModalThanks = ()=>{
-  document.querySelector('.modal')
-  .classList.toggle('.modal-hidden');
-
-};
 
 
-document.querySelector('#show-modal')
-.addEventListener('click',toggleModalThanks);
-// document.querySelector('#show-modal')
-// .addEventListener('submit',(event)=>{
-// event.preventDefault();
-// toggleModalThanks();
-// });
+function support(){
+  var thanksBox = document.querySelector(".modal");
+  thanksBox.style.display = "block";
+ 
+}
+function gotit(){
+  var thanksBox = document.querySelector(".modal");
+  thanksBox.style.display = "none";
+ 
+}
 
-document.querySelector('#modal_close')
-.addEventListener('click',toggleModalThanks);
+
+
 
   // CODE FOR THANKS SUPPORT END
-// function support(){
-//   var thanksBox =  document.getElementById("thankSupportContent");
-//   thanksBox.style.display = "block";
-// }
 
 
 
@@ -60,3 +54,14 @@ $closeIcon.addEventListener('click',()=>{
  $closeIcon.style.display = 'none';
 })
 // mobile nav overlay start
+
+
+// crowdfunding pledges
+
+function popovermodalbox(){
+  document.querySelector("#popovermodal").style.display = 'block';
+}
+function pledgeclose(){
+  // alert("dkdddlvlvl");
+  document.querySelector("#popovermodal").style.display = "none";
+}
